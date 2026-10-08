@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "tabs": [
+    {
+      "id": "main",
+      "name": "main",
+      "type": "main"
+    }
+  ],
+  "selectedTabId": "main",
+  "docsByTab": {
+    "main": {
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "Oval",
+          "text": "start",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1791459481648",
+          "running": false,
+          "selected": false
+        },
+        "end": {
+          "id": "end",
+          "type": "Oval",
+          "text": "end",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "running": false,
+          "selected": false
+        },
+        "input_1791459481648": {
+          "id": "input_1791459481648",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "STR",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1791459514030",
+          "selected": false,
+          "prompt": "INPUT ",
+          "running": false
+        },
+        "assign_1791459514030": {
+          "id": "assign_1791459514030",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "count:=Length_Of(str)",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "output_1791459678638",
+          "selected": false,
+          "running": false
+        },
+        "output_1791459678638": {
+          "id": "output_1791459678638",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Total characters = \" + count",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "end",
+          "selected": true,
+          "running": false
+        }
+      },
+      "startId": "start",
+      "endId": "end"
+    }
+  }
+}
